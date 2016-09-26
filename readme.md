@@ -1,0 +1,4 @@
+- Change ngrok.service to your configuration
+- Copy it to /lib/systemd/system
+- Run: sudo systemctl enable /lib/systemd/system/ngrok.service
+- Run: sudo systemctl start ngrok.service

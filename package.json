@@ -1,0 +1,36 @@
+{
+  "name": "led-strip-controller",
+  "version": "1.0.0",
+  "description": "A simple web API for controlling an RGB LED light strip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oliver-spryn/led-strip-controller"
+  },
+  "keywords": [
+    "LED",
+    "LED",
+    "Strip",
+    "RGB",
+    "LED",
+    "RGB",
+    "LED",
+    "Strip",
+    "Controller",
+    "Web",
+    "API"
+  ],
+  "author": "Oliver Spryn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oliver-spryn/led-strip-controller/issues"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "jsonfile": "^2.4.0",
+    "pigpio": "^0.4.0"
+  }
+}

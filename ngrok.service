@@ -1,0 +1,15 @@
+[Unit]
+Description=Ngrok Tunnel Service
+After=syslog.target network.target
+
+[Service]
+User=pi
+Group=pi
+
+Type=simple
+ExecStart=/path/to/ngrok http -subdomain=your-subdomain 3000
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
