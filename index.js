@@ -60,18 +60,20 @@ function on() {
 	jsonfile.writeFileSync(file, colors);
 }
 
-function setColors(req) {
-	var query = req.query;
-
+function setColors(query) {
 	if(query.hasOwnProperty('red') && !isNaN(parseInt(query.red)))
-		colors.red = parseInt(query.red) % 256;
+		colors.red = Math.abs(parseInt(query.red)) % 256;
 
 	if(query.hasOwnProperty('green') && !isNaN(parseInt(query.green)))
-		colors.green = parseInt(query.green) % 256;
+		colors.green = Math.abs(parseInt(query.green)) % 256;
 
 	if(query.hasOwnProperty('blue') && !isNaN(parseInt(query.blue)))
-		colors.blue = parseInt(query.blue) % 256;
+		colors.blue = Math.abs(parseInt(query.blue)) % 256;
 }
+
+// Start up
+
+on();
 
 // Server pages
 app.get('/', (req, res) => {
@@ -79,19 +81,19 @@ app.get('/', (req, res) => {
 });
 
 app.get('/off', (req, res) => {
-	setColors(req);
+	setColors(req.query);
 	off();
 	res.send(colors);
 });
 
 app.get('/on', (req, res) => {
-	setColors(req);
+	setColors(req.query);
 	on();
 	res.send(colors);
 });
 
 app.get('/toggle', (req, res) => {
-	setColors(req);
+	setColors(req.query);
 	colors.status == 'on' ? off() : on();
 	res.send(colors);
 });
