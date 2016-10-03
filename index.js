@@ -72,8 +72,7 @@ function setColors(query) {
 }
 
 // Start up
-
-on();
+colors.status == 'on' ? on() : off();
 
 // Server pages
 app.get('/', (req, res) => {
