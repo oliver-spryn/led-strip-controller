@@ -117,7 +117,7 @@ Once the web interface is running, here is how you use the web interface to chec
     * The `:3000` should **not** be added when using Ngrok
 
 ### Understanding JSON and Color Values
-When reporing on the status of the lights, the LED Strip Controller will give you JSON, looking something like this:
+When reporting on the status of the lights, the LED Strip Controller will give you a JSON response, looking something like this:
 
 ```json
 {"red":100,"green":200,"blue":255,"status":"on"}
