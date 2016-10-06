@@ -69,7 +69,7 @@ If you would like the controller to start up each time the Raspberry Pi is boote
     * Replace `/full/path/to/index.js` with the full path to your `index.js` file
     ```bash
     # Start up the LED Strip Controller web interface
-    sudo /usr/local/bin/node /full/path/to/index.js
+    sudo /usr/local/bin/node /full/path/to/index.js &
     ```
 4. Save your file (`Ctrl + O`) and exit (`Ctrl + X`)
 
