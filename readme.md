@@ -82,7 +82,7 @@ Open up a free account at [dataplicity.com](https://dataplicity.com) in order to
 ### Install the Dataplicity Client
 After obtaining a Dataplicity account, the application will need installed on the Raspberry Pi. The Dataplicity developers have written a quick start guide, showing how this can be done: https://docs.dataplicity.com/docs#section-procedure
 
-### Active the Web Interface
+### Activate the Web Interface
 Once you have completed the installation, restart the Raspberry Pi. Once it has booted up again, go into the [Dataplicity dashboard](https://www.dataplicity.com/devices/), click on your device in the list, and click on the Activate Wormhole button above the terminal. This will give you a domain where you device is accessible to the web. It will remain active until you disable it.
 
 ### Final Testing
