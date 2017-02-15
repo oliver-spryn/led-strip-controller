@@ -57,7 +57,7 @@ Now that the prerequisite software has been installed, the LED Strip Controller 
 4. Go into the installation directory: `cd led-strip-controller`
 5. Install the project dependencies: `npm install`
 6. Test out your application: `sudo node index.js`
-    * `sudo` is necessary, since this programs controls the Pi's GPIO pins
+    * `sudo` is necessary, since this programs controls the Pi's GPIO pins and uses the device's port 80
 
 ### Start Up the Controller on Boot (Optional)
 If you would like the controller to start up each time the Raspberry Pi is booted, follow these steps:
@@ -65,7 +65,7 @@ If you would like the controller to start up each time the Raspberry Pi is boote
 1. Log into your Raspberry Pi terminal
 2. Edit the `rc.local` file: `sudo nano /etc/rc.local`
 3. Add the following lines, **before** the `exit 0` statement (usually the last line):
-    * `sudo` is necessary, since this programs controls the Pi's GPIO pins and will use the device's port 80
+    * `sudo` is necessary, since this programs controls the Pi's GPIO pins and uses the device's port 80
     * Replace `/full/path/to/index.js` with the full path to your `index.js` file
     ```bash
     # Start up the LED Strip Controller web interface
