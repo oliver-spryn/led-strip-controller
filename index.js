@@ -98,6 +98,6 @@ app.get('/toggle', (req, res) => {
 });
 
 // Start up the server
-app.listen(3000, () => {
+app.listen(80, () => {
 	console.log('Listening on port 3000');
 });
